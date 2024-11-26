@@ -11,63 +11,77 @@ with open('soil_fertility_rf_model.pkl', 'rb') as file:
 st.markdown(
     """
     <style>
+    /* Overall body styling */
     body {
-        background-color: #eaf7ea; /* Soft green background for a natural feel */
+        background: linear-gradient(to bottom, #e8fce8, #d4f0d4);
+        font-family: 'Arial', sans-serif;
+        color: #333;
     }
     .main {
-        background: linear-gradient(to bottom right, #ffffff, #e8f5e9);
-        border-radius: 15px;
-        padding: 25px;
-        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 30px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
     }
     h1 {
-        color: #2e7d32;
+        color: #2d6a4f;
+        font-family: 'Trebuchet MS', sans-serif;
         text-align: center;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     }
     h2, h3 {
-        color: #388e3c;
+        color: #40916c;
         text-align: center;
-        font-family: 'Roboto', sans-serif;
+        font-size: 1.8em;
+        margin-bottom: 15px;
     }
     .stButton>button {
-        background-color: #43a047;
+        background: linear-gradient(to right, #52b788, #40916c);
         color: white;
-        border-radius: 12px;
-        border: 2px solid #388e3c;
-        padding: 12px 24px;
+        border: none;
+        border-radius: 10px;
+        padding: 12px 25px;
         font-size: 18px;
-        font-family: 'Arial', sans-serif;
-        font-weight: bold;
         cursor: pointer;
         transition: all 0.3s ease;
+        font-weight: bold;
     }
     .stButton>button:hover {
-        background-color: #2e7d32;
-        border-color: #1b5e20;
+        background: linear-gradient(to right, #40916c, #1b4332);
         transform: scale(1.05);
     }
-    input[type="number"] {
-        border: 2px solid #c8e6c9;
-        border-radius: 8px;
+    .stNumberInput input {
+        border: 2px solid #b7e4c7;
+        border-radius: 10px;
         padding: 10px;
         font-size: 16px;
+        color: #333;
     }
-    input[type="number"]:focus {
+    .stNumberInput input:focus {
+        border-color: #52b788;
         outline: none;
-        border-color: #66bb6a;
-        box-shadow: 0 0 5px rgba(102, 187, 106, 0.8);
+        box-shadow: 0 0 8px rgba(82, 183, 136, 0.8);
     }
     footer {
         font-family: 'Arial', sans-serif;
         color: #555;
         text-align: center;
+        margin-top: 30px;
     }
     hr {
         border: 0;
         border-top: 1px solid #ddd;
         margin: 30px 0;
+    }
+    .css-1aumxhk {
+        max-width: 800px; /* Adjust for readability on larger screens */
+        margin: auto;
     }
     </style>
     """,
@@ -113,7 +127,7 @@ st.markdown(
     """
     <hr>
     <p style='text-align: center; font-size: 14px; color: #666;'>
-        Created using Streamlit
+        Created using Streamlit | Powered by Machine Learning
     </p>
     """,
     unsafe_allow_html=True
