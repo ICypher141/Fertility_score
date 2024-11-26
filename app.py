@@ -21,7 +21,7 @@ st.markdown(
         color: #333;
     }
     .main {
-        background: rgba(255, 255, 255, 0.85); /* White background with transparency for readability */
+        background: transparent
         border-radius: 20px;
         padding: 30px;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
