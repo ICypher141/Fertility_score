@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f9fc;
+            text-align: center;
+            padding: 20px;
+        }
+        .result {
+            display: inline-block;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .result h1 {
+            color: #007bff;
+        }
+        .result a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #fff;
+            background: #007bff;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+        .result a:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="result">
+        <h1>Prediction Result</h1>
+        <p>The predicted soil fertility score is:</p>
+        <h2>{{ prediction }}</h2>
+        <a href="/">Predict Again</a>
+    </div>
+</body>
+</html>
