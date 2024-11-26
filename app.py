@@ -13,7 +13,7 @@ st.markdown(
     <style>
     /* Full-page background image */
     body {
-        background-image: url('C:\Users\kaush\Desktop\soil.jpeg'); /* Replace with the actual URL or local path */
+        background-image: url('soil.jpeg'); /* Replace with the actual URL or local path */
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
