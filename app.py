@@ -7,18 +7,21 @@ import numpy as np
 with open('soil_fertility_rf_model.pkl', 'rb') as file:
     model = pickle.load(file)
 
-# Custom CSS for UI enhancement
+# Custom CSS for UI enhancement with a background image
 st.markdown(
     """
     <style>
-    /* Overall body styling */
+    /* Full-page background image */
     body {
-        background: linear-gradient(to bottom, #e8fce8, #d4f0d4);
+        background-image: url('C:\Users\kaush\Desktop\soil.jpeg'); /* Replace with the actual URL or local path */
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
         font-family: 'Arial', sans-serif;
         color: #333;
     }
     .main {
-        background: #ffffff;
+        background: rgba(255, 255, 255, 0.85); /* White background with transparency for readability */
         border-radius: 20px;
         padding: 30px;
         box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
