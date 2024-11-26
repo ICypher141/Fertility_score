@@ -12,29 +12,62 @@ st.markdown(
     """
     <style>
     body {
-        background-color: #f0f2f6;
+        background-color: #eaf7ea; /* Soft green background for a natural feel */
     }
     .main {
-        background-color: #ffffff;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(to bottom right, #ffffff, #e8f5e9);
+        border-radius: 15px;
+        padding: 25px;
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
     }
-    h1, h2, h3 {
-        color: #333333;
+    h1 {
+        color: #2e7d32;
         text-align: center;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    h2, h3 {
+        color: #388e3c;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
     }
     .stButton>button {
-        background-color: #4CAF50;
+        background-color: #43a047;
         color: white;
-        border-radius: 8px;
-        border: none;
-        padding: 10px 20px;
-        font-size: 16px;
+        border-radius: 12px;
+        border: 2px solid #388e3c;
+        padding: 12px 24px;
+        font-size: 18px;
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
         cursor: pointer;
+        transition: all 0.3s ease;
     }
     .stButton>button:hover {
-        background-color: #45a049;
+        background-color: #2e7d32;
+        border-color: #1b5e20;
+        transform: scale(1.05);
+    }
+    input[type="number"] {
+        border: 2px solid #c8e6c9;
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 16px;
+    }
+    input[type="number"]:focus {
+        outline: none;
+        border-color: #66bb6a;
+        box-shadow: 0 0 5px rgba(102, 187, 106, 0.8);
+    }
+    footer {
+        font-family: 'Arial', sans-serif;
+        color: #555;
+        text-align: center;
+    }
+    hr {
+        border: 0;
+        border-top: 1px solid #ddd;
+        margin: 30px 0;
     }
     </style>
     """,
