@@ -21,25 +21,25 @@ st.markdown(
         color: #333;
     }
     .main {
-        background: transparent
+        background: transparent; /* Make the container background transparent */
         border-radius: 20px;
         padding: 30px;
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Keep shadow for text readability */
         margin-top: 30px;
         max-width: 800px;
         margin-left: auto;
         margin-right: auto;
     }
     h1 {
-        color: #2d6a4f;
+        color: #ffffff; /* Change text color to white for visibility */
         font-family: 'Trebuchet MS', sans-serif;
         text-align: center;
         font-size: 2.5em;
         margin-bottom: 20px;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for contrast */
     }
     h2, h3 {
-        color: #40916c;
+        color: #ffffff; /* Change text color to white */
         text-align: center;
         font-size: 1.8em;
         margin-bottom: 15px;
@@ -73,13 +73,13 @@ st.markdown(
     }
     footer {
         font-family: 'Arial', sans-serif;
-        color: #555;
+        color: #ffffff; /* Make footer text white for visibility */
         text-align: center;
         margin-top: 30px;
     }
     hr {
         border: 0;
-        border-top: 1px solid #ddd;
+        border-top: 1px solid rgba(255, 255, 255, 0.5); /* Subtle white line */
         margin: 30px 0;
     }
     .css-1aumxhk {
@@ -87,6 +87,7 @@ st.markdown(
         margin: auto;
     }
     </style>
+
     """,
     unsafe_allow_html=True
 )
